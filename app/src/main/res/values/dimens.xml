@@ -3,4 +3,6 @@
     <dimen name="margin_default">8dp</dimen>
     <dimen name="min_height">48dp</dimen>
     <dimen name="sixteen">16dp</dimen>
+    <dimen name="min_height_rectangle">32dp</dimen>
+    <dimen name="min_width_rectangle">216dp</dimen>
 </resources>

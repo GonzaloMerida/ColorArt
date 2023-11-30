@@ -12,11 +12,14 @@
         style="@style/white_box"
         android:layout_width="231dp"
         android:layout_height="30dp"
+        android:layout_marginStart="@dimen/sixteen"
         android:layout_marginTop="@dimen/sixteen"
+        android:layout_marginEnd="@dimen/sixteen"
         android:text="@string/box_1"
         app:layout_constraintBottom_toTopOf="@+id/tvBox2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="112dp"
         tools:text="@string/box_1" />
 
     <TextView
@@ -24,10 +27,11 @@
         style="@style/square"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/sixteen"
         android:text="@string/box_2"
         app:layout_constraintBottom_toTopOf="@+id/tvBox3"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvBox1"
-        tools:layout_editor_absoluteX="165dp"
         tools:text="@string/box_2" />
 
     <TextView
@@ -35,21 +39,70 @@
         style="@style/square"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/sixteen"
         android:text="@string/box_3"
         app:layout_constraintBottom_toTopOf="@+id/tvBox4"
-        app:layout_constraintTop_toBottomOf="@+id/tvBox2"
-        tools:layout_editor_absoluteX="165dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvBox2" />
 
     <TextView
         android:id="@+id/tvBox4"
         style="@style/white_box"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/sixteen"
         android:layout_marginBottom="@dimen/sixteen"
         android:text="@string/box_4"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvBox3"
-        tools:layout_editor_absoluteX="165dp"
         tools:text="@string/box_4" />
+
+    <TextView
+        android:id="@+id/tvBox5"
+        style="@style/rectangle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="@dimen/min_width_rectangle"
+        android:minHeight="@dimen/min_height_rectangle"
+        android:text="@string/box_5"
+        app:layout_constraintBottom_toTopOf="@+id/tvBox6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvBox2"
+        app:layout_constraintTop_toTopOf="@+id/tvBox2"
+        app:layout_constraintVertical_chainStyle="spread_inside"
+        tools:text="@string/box_5" />
+
+    <TextView
+        android:id="@+id/tvBox6"
+        style="@style/rectangle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="@dimen/min_width_rectangle"
+        android:minHeight="@dimen/min_height_rectangle"
+        android:text="@string/box_6"
+        app:layout_constraintBottom_toTopOf="@+id/tvBox7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvBox2"
+        app:layout_constraintTop_toBottomOf="@+id/tvBox5"
+        tools:text="@string/box_6" />
+
+    <TextView
+        android:id="@+id/tvBox7"
+        style="@style/rectangle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="@dimen/min_width_rectangle"
+        android:minHeight="@dimen/min_height_rectangle"
+        android:text="@string/box_7"
+        app:layout_constraintBottom_toBottomOf="@+id/tvBox2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvBox2"
+        app:layout_constraintTop_toBottomOf="@+id/tvBox6"
+        tools:text="@string/box_7" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

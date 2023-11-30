@@ -11,4 +11,11 @@
         <item name="android:minWidth">128dp</item>
         <item name="android:minHeight">128dp</item>
     </style>
+
+    <style name="rectangle">
+        <item name="android:layout_marginStart">@dimen/sixteen</item>
+        <item name="android:layout_marginEnd">@dimen/sixteen</item>
+        <item name="android:minWidth">@dimen/min_width_rectangle</item>
+        <item name="android:minHeight">@dimen/min_height_rectangle</item>
+    </style>
 </resources>
