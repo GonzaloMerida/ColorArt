@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BoxesFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/tvBox1"
+        style="@style/white_box"
+        android:layout_width="231dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="@dimen/sixteen"
+        android:text="@string/box_1"
+        app:layout_constraintBottom_toTopOf="@+id/tvBox2"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="112dp"
+        tools:text="@string/box_1" />
+
+    <TextView
+        android:id="@+id/tvBox2"
+        style="@style/square"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/box_2"
+        app:layout_constraintBottom_toTopOf="@+id/tvBox3"
+        app:layout_constraintTop_toBottomOf="@+id/tvBox1"
+        tools:layout_editor_absoluteX="165dp"
+        tools:text="@string/box_2" />
+
+    <TextView
+        android:id="@+id/tvBox3"
+        style="@style/square"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/box_3"
+        app:layout_constraintBottom_toTopOf="@+id/tvBox4"
+        app:layout_constraintTop_toBottomOf="@+id/tvBox2"
+        tools:layout_editor_absoluteX="165dp" />
+
+    <TextView
+        android:id="@+id/tvBox4"
+        style="@style/white_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/sixteen"
+        android:text="@string/box_4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvBox3"
+        tools:layout_editor_absoluteX="165dp"
+        tools:text="@string/box_4" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
