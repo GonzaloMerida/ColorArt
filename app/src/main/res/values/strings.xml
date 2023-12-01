@@ -12,4 +12,5 @@
     <string name="box_8">Caja 8</string>
     <string name="box_9">Caja 9</string>
     <string name="box_10">Caja 10</string>
+    <string name="tvInstructions">Cómo jugar: Pulsa en la pantalla y en las cajas</string>
 </resources>

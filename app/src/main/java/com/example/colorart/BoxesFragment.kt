@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import com.example.colorart.databinding.FragmentBoxesBinding
+import kotlin.random.Random
 
 
 class BoxesFragment : Fragment() {
@@ -15,6 +16,8 @@ class BoxesFragment : Fragment() {
     private var _binding : FragmentBoxesBinding? = null
     val binding
         get() = _binding!!
+
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -51,11 +54,22 @@ class BoxesFragment : Fragment() {
             }
         }
 
+
         listBoxes.forEach {
             it.setOnClickListener {box ->
-                box.setBackgroundColor(Color.RED)
+                box.setBackgroundColor(Color.rgb((0..255).random(), (0..255).random(), (0..255).random()))
             }
         }
+
+        binding.ibRandom.setOnClickListener{
+            val color = Color.rgb(
+                (0..255).random(),
+                (0..255).random(),
+                (0..255).random()
+            )
+
+        }
+
 
         return binding.root
     }

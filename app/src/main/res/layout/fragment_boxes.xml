@@ -56,10 +56,10 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/sixteen"
         android:layout_marginEnd="@dimen/sixteen"
-        android:layout_marginBottom="@dimen/sixteen"
         android:text="@string/box_4"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/ibRandom"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvBox3"
         tools:text="@string/box_4" />
@@ -173,5 +173,49 @@
         app:layout_constraintStart_toEndOf="@+id/tvBox2"
         app:layout_constraintTop_toBottomOf="@+id/tvBox6"
         tools:text="@string/box_7" />
+
+    <TextView
+        android:id="@+id/tvInstructions"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/sixteen"
+        android:layout_marginEnd="@dimen/sixteen"
+        android:layout_marginBottom="@dimen/sixteen"
+        android:text="@string/tvInstructions"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvColor"
+        app:layout_constraintVertical_bias="0.666"
+        tools:text="@string/tvInstructions" />
+
+    <ImageButton
+        android:id="@+id/ibRandom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/sixteen"
+        android:minWidth="@dimen/min_width_ibRandom"
+        android:minHeight="@dimen/min_height_ibRandom"
+        android:src="@android:drawable/ic_menu_help"
+        app:layout_constraintBottom_toTopOf="@+id/tvInstructions"
+        app:layout_constraintEnd_toStartOf="@+id/tvColor"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvColor"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tvColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:minWidth="@dimen/min_width_ibRandom"
+        android:minHeight="@dimen/min_height_ibRandom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ibRandom"
+        tools:layout_editor_absoluteY="575dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

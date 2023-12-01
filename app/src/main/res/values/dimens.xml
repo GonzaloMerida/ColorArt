@@ -5,4 +5,6 @@
     <dimen name="sixteen">16dp</dimen>
     <dimen name="min_height_rectangle">32dp</dimen>
     <dimen name="min_width_rectangle">216dp</dimen>
+    <dimen name="min_height_ibRandom">64dp</dimen>
+    <dimen name="min_width_ibRandom">64dp</dimen>
 </resources>
