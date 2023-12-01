@@ -5,6 +5,10 @@
         <item name="android:backgroundTint">@color/white</item>
         <item name="android:textColor">@color/white</item>
         <item name="android:textSize">20sp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textAlignment">center</item>
+        <item name ="android:padding">4dp</item>
+
     </style>
 
     <style name="square" parent="white_box">
@@ -12,7 +16,7 @@
         <item name="android:minHeight">128dp</item>
     </style>
 
-    <style name="rectangle">
+    <style name="rectangle" parent="white_box">
         <item name="android:layout_marginStart">@dimen/sixteen</item>
         <item name="android:layout_marginEnd">@dimen/sixteen</item>
         <item name="android:minWidth">@dimen/min_width_rectangle</item>

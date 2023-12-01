@@ -1,10 +1,12 @@
 package com.example.colorart
 
+import android.graphics.Color
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
 import com.example.colorart.databinding.FragmentBoxesBinding
 
 
@@ -28,7 +30,32 @@ class BoxesFragment : Fragment() {
         // Inflate the layout for this fragment
         _binding = FragmentBoxesBinding.inflate(inflater, container, false)
 
+        val listBoxes : MutableList<TextView> = mutableListOf(
+            binding.tvBox1,
+            binding.tvBox2,
+            binding.tvBox3,
+            binding.tvBox4,
+            binding.tvBox5,
+            binding.tvBox6,
+            binding.tvBox7,
+            binding.tvBox8,
+            binding.tvBox9,
+            binding.tvBox10
+        )
 
+        binding.clBackground.setOnClickListener {
+            it.setBackgroundColor(Color.LTGRAY)
+            listBoxes.forEach{box ->
+                box.setBackgroundColor(Color.WHITE)
+
+            }
+        }
+
+        listBoxes.forEach {
+            it.setOnClickListener {box ->
+                box.setBackgroundColor(Color.RED)
+            }
+        }
 
         return binding.root
     }
